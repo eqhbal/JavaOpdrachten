@@ -1,7 +1,7 @@
 package h7;
 
 public class BankApp {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Account tonny = new Account("Tonny", "Stark", 36, 12345, 12.5, 20000);
         Account borris = new Account("Borris", "Johnson", 58, 12245, 12.5, 1000);
@@ -22,6 +22,11 @@ public class BankApp {
         borris.geldStorten(50);
 
         borris.geldPinnen(1050);
+
+
+    }
+
+    public void geldOvermaken(double overmaken) {
 
 
     }

@@ -9,7 +9,7 @@ public class Account {
     private double rentePercentage;
     private double saldo;
 
-    public Account(String voorNaam, String achterNaam, int leeftijd, int rekeningNummer, double rentePercentage, double saldo){
+    public Account(String voorNaam, String achterNaam, int leeftijd, int rekeningNummer, double rentePercentage, double saldo) {
 
         this.voorNaam = voorNaam;
         this.achterNaam = achterNaam;
@@ -20,24 +20,25 @@ public class Account {
 
     }
 
-    public void geldStorten(double bedragStorten){
+    public void geldStorten(double bedragStorten) {
 
         this.saldo += bedragStorten;
         System.out.println("U heeft: " + bedragStorten + " uw nieuwe saldo is: " + this.saldo);
 
     }
 
-    public void geldPinnen(double bedragPinnen){
+    public void geldPinnen(double bedragPinnen) {
 
-        if(this.saldo - bedragPinnen <0){
+        if (this.saldo - bedragPinnen < 0) {
             System.out.println("Uw kunt niet meer pinnen dan: " + this.saldo);
-        }else{
+        } else {
             this.saldo -= bedragPinnen;
             System.out.println("Uw heeft: " + bedragPinnen + " gepind. Uw huidige saldo is: " + this.saldo);
 
         }
 
     }
+
 
     public String getVoorNaam() {
         return voorNaam;
