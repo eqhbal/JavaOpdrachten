@@ -4,6 +4,25 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Overloading {
+    public static void main(String[] args){
+        Overloading overloading = new Overloading();
+            int greatestNumber = overloading.greatest(10, 60);
+                System.out.println("Het grootste getal is: " + greatestNumber);
+
+            String greatestValue = overloading.greatest("324324", "r32eewrewfew");
+                System.out.println(greatestValue);
+
+            ArrayList<Integer> list = new ArrayList<>();
+                list.add(55);
+                list.add(9);
+                list.add(145);
+            int greatestValue1 = overloading.greatest(list);
+                System.out.println("Het grootste getal is: " + greatestValue1);
+
+            int factorial = overloading.factorial(10);
+                System.out.println(factorial);
+
+    }
 
     public int greatest(int a, int b){
         return Math.max(a, b);
@@ -40,23 +59,5 @@ public class Overloading {
         return (n * factorial(n -1));
         }
     }
-//    Main uitvoering
-//
-//    Overloading overloading = new Overloading();
-//    int greatestNumber = overloading.greatest(10, 60);
-//        System.out.println("Het grootste getal is: " + greatestNumber);
-//
-//    String greatestValue = overloading.greatest("324324", "r32eewrewfew");
-//        System.out.println(greatestValue);
-//
-//    ArrayList<Integer> list = new ArrayList<>();
-//        list.add(55);
-//        list.add(9);
-//        list.add(145);
-//    int greatestValue1 = overloading.greatest(list);
-//        System.out.println("Het grootste getal is: " + greatestValue1);
-//
-//    int factorial = overloading.factorial(10);
-//        System.out.println(factorial);
 
 }

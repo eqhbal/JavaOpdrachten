@@ -2,7 +2,7 @@ package h7;
 
 public class BankApp {
     public static void main(String[] args) {
-        Account tonny = new Account("Tonny", "Stark", 36, 12345, 2.5, 20000, 2017, 2017);
+        Account tonny = new Account("Tonny", "Stark", 36, 12345, 2.5, 20000, 2018, 2018);
         Account borris = new Account("Borris", "Johnson", 58, 12245, 2.5, 1000, 2017, 2018);
 
 
@@ -16,14 +16,16 @@ public class BankApp {
         System.out.println("Saldo: " + borris.getSaldo());
 
 
-        tonny.geldStorten(50);
+//        tonny.geldStorten(50);
+//
+//        tonny.geldPinnen(100);
+//
+//        borris.geldStorten(50);
+//
+//        borris.geldPinnen(1050);
 
-        tonny.geldPinnen(100);
-
-        borris.geldStorten(50);
-
-        borris.geldPinnen(1050);
-
+        borris.geldOvermaken(32, tonny);
+        System.out.println(borris.getSaldo());
 
     }
 

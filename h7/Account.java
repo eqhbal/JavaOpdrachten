@@ -40,11 +40,23 @@ public class Account {
     public void geldPinnen(double bedragPinnen) {
 
         if (this.saldo - bedragPinnen < 0) {
-            System.out.println("Uw kunt niet meer pinnen dan: " + this.saldo);
+            System.out.println("U kunt niet meer pinnen dan: " + this.saldo);
         } else {
             this.saldo -= bedragPinnen;
-            System.out.println("Uw heeft: " + bedragPinnen + " gepind. Uw huidige saldo is: " + this.saldo);
+            System.out.println("U heeft: " + bedragPinnen + " gepind. Uw huidige saldo is: " + this.saldo);
 
+        }
+
+    }
+
+    public void geldOvermaken(double overmaken, Account accountNaar){
+
+        if(this.saldo - overmaken < 0) {
+            System.out.println("U kunt niet meer overmaken dan: " + this.saldo);
+        } else {
+            this.saldo -= overmaken;
+            accountNaar.saldo += overmaken;
+            System.out.println("U heeft: " + overmaken + " overgemaakt naar " + accountNaar.getVoorNaam());
         }
 
     }

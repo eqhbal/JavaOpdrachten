@@ -26,5 +26,9 @@ public class h3 {
         int j = i < 3 ? i++ + ++i : ++i >>> 1;
         System.out.println(j);
 
+        //3.3
+        System.out.println("binary sum of 1010 +100:  ");
+        System.out.print(Integer.toBinaryString(1010) + Integer.toBinaryString(100));
+
     }
 }
