@@ -1,6 +1,8 @@
 package h6;
 
-public class Arrays {
+import java.util.Arrays;
+
+class ArraysOp {
     public static void main(String[] args) {
         long[] row = new long[4]; //[0, 0, 0, 0] je maakt een array van 4 lang. Het begint van 0 tot en met 3.
         row[2] = 3; //[0, 0, 3, 0] je geeft de 3e vak in de array de waarde 3.
@@ -12,14 +14,14 @@ public class Arrays {
         long[] array = new long[] {1, 2, 3, 4};
             System.out.println(array.length);
 
-        long[] newArray = java.util.Arrays.copyOf(array, array.length*2);
+        long[] newArray = Arrays.copyOf(array, array.length*2);
             System.out.println(newArray.length);
 
-            System.out.println(java.util.Arrays.toString(newArray));
+            System.out.println(Arrays.toString(newArray));
 
         long[] multiplierArray = new long[]{1, 2, 3, 4};
         multiplier(multiplierArray, 2);
-            System.out.println(java.util.Arrays.toString(multiplierArray));
+            System.out.println(Arrays.toString(multiplierArray));
 
     }
     public static void multiplier(long[] multiplyArray, int multiplier){

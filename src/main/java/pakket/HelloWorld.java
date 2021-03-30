@@ -1,4 +1,4 @@
-package helloWorld.pakket; //lab oefening H2 4
+package pakket; //lab oefening H2 4
 
 import java.util.Scanner;
 import static java.lang.Math.abs;
