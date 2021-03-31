@@ -5,7 +5,7 @@ import h7.PersonHasDiedException;
 
 import java.util.Objects;
 
-public class Person {
+public class Person extends Human {
     public static boolean numberOfPossibleGenders;
     private String name;
     private int age;
@@ -56,6 +56,10 @@ public class Person {
 
     public void setGender(Gender gender) {
         this.gender = gender;
+    }
+
+    public String greet(){
+        return "Hello, my name is " + this.name + ". Nice to meet you!.";
     }
 
 }
